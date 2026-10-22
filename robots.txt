@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /resume.html
+Sitemap: https://chaitanyamalineni.github.io/sitemap.xml

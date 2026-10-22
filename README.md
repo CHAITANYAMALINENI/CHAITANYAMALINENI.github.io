@@ -1,5 +1,10 @@
 # Portfolio — Chaitanya Malineni
 
-Static site (HTML + CSS + vanilla JS, no build step). Open `index.html` or run `python3 -m http.server 8000`.
+Live: https://chaitanyamalineni.github.io/
 
-Deploy: push to a GitHub repo named `CHAITANYAMALINENI.github.io` (or any repo) and enable Pages from `main` / root.
+Static site: HTML + CSS + vanilla JS, no framework and no build step. Run locally with `python3 -m http.server 8000`.
+
+- `index.html`, `style.css`, `script.js` — the site, including the interactive Event Flow Lab (canvas simulation).
+- `resume.html` → `resume.pdf` — one-page résumé (contains no phone number or street address).
+- `og.png` — social share image (1200×630).
+- Deployed with GitHub Pages from `main` / root.

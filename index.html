@@ -4,243 +4,278 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chaitanya Malineni — Senior Full-Stack Engineer</title>
-<meta name="description" content="Senior Full-Stack Engineer with 8+ years building React front ends, distributed event-driven backends and AI-powered services. 300+ microservices, 2M+ events/day, 10K RPS peak.">
+<meta name="description" content="Senior Full-Stack Engineer with 8+ years building React front ends, event-driven backends on AWS and AI-powered services. 300+ microservices, 2M+ events/day, 10K RPS peak.">
+<link rel="canonical" href="https://chaitanyamalineni.github.io/">
 <meta property="og:title" content="Chaitanya Malineni — Senior Full-Stack Engineer">
-<meta property="og:description" content="Full-stack engineering from React UIs to event-driven platforms and agentic AI workflows. 8+ years, 300+ microservices, 2M+ events/day.">
+<meta property="og:description" content="From React interfaces to event-driven platforms serving 300+ microservices. Try the live Event Flow Lab.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0b0d12">
+<meta property="og:url" content="https://chaitanyamalineni.github.io/">
+<meta property="og:image" content="https://chaitanyamalineni.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chaitanyamalineni.github.io/og.png">
+<meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0d11" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>
+  try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;
+  else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark';}catch(e){}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Chaitanya Malineni","jobTitle":"Senior Full-Stack Engineer","url":"https://chaitanyamalineni.github.io/","email":"mailto:chaitanyamalineni4880@gmail.com","sameAs":["https://www.linkedin.com/in/chaitanya-malineni","https://github.com/CHAITANYAMALINENI"],"worksFor":{"@type":"Organization","name":"SS&C Intralinks"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"The University of Texas at Dallas"},{"@type":"CollegeOrUniversity","name":"VR Siddhartha Engineering College"}],"address":{"@type":"PostalAddress","addressLocality":"Dallas–Fort Worth","addressRegion":"TX","addressCountry":"US"},"knowsAbout":["Distributed systems","Event-driven architecture","React","TypeScript","Node.js","Java","AWS","Microservices","LLM applications"]}
+</script>
 </head>
 <body>
-<div class="glow" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
-  <a href="#top" class="logo" aria-label="Home"><span>CM</span></a>
-  <nav aria-label="Primary">
-    <a href="#impact">Impact</a>
+  <a href="#top" class="brand" aria-label="Chaitanya Malineni — home"><span class="mono-mark">CM</span><span class="brand-name">Chaitanya Malineni</span></a>
+  <nav aria-label="Primary" id="menu">
     <a href="#experience">Experience</a>
-    <a href="#architecture">Architecture</a>
+    <a href="#lab">Live demo</a>
+    <a href="#stack">Stack</a>
     <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact" class="cta-sm">Contact</a>
+    <a href="#contact">Contact</a>
   </nav>
-  <button id="theme" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">◐</button>
+  <a class="btn sm primary hide-sm" href="resume.pdf" download>Résumé&nbsp;PDF</a>
+  <button id="theme" class="icon-btn" aria-label="Toggle light / dark theme" title="Toggle theme">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
 </header>
 
-<main id="top">
-  <!-- HERO -->
-  <section class="hero container">
-    <p class="eyebrow"><span class="dot"></span> Dallas–Fort Worth, TX · Open to Software Engineer roles</p>
-    <h1>I build full-stack products<br>that <em>never go down.</em></h1>
-    <p class="lead">Senior Full-Stack Engineer with 8+ years across the stack — from React interfaces to distributed, event-driven platforms and microservices — now building AI-powered services and agentic workflows on top of them.</p>
-    <div class="hero-actions">
-      <a class="btn primary" href="#projects">See my work</a>
-      <a class="btn" href="https://www.linkedin.com/in/chaitanya-malineni" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn" href="https://github.com/CHAITANYAMALINENI" target="_blank" rel="noopener">GitHub ↗</a>
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="status"><span class="pulse"></span> Open to full-time Software Engineer roles · Dallas–Fort Worth</p>
+      <h1>Chaitanya<br>Malineni<span class="stop">.</span></h1>
+      <p class="role">Senior Full-Stack Engineer</p>
+      <p class="lead">I build products end to end — React interfaces, event-driven backends on AWS, and the observability that keeps them up. 8+ years shipping software for enterprise scale, now adding LLM-powered services and agentic workflows.</p>
+      <div class="cta">
+        <a class="btn primary" href="resume.pdf" download>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Download résumé
+        </a>
+        <button class="btn" id="copy-email" type="button" data-email="chaitanyamalineni4880@gmail.com">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <span id="copy-label">Copy email</span>
+        </button>
+        <a class="btn ghost" href="https://www.linkedin.com/in/chaitanya-malineni" target="_blank" rel="noopener">LinkedIn&nbsp;↗</a>
+        <a class="btn ghost" href="https://github.com/CHAITANYAMALINENI" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+      </div>
     </div>
-    <div class="terminal" aria-hidden="true">
-      <div class="t-bar"><i></i><i></i><i></i><span>~/chaitanya — platform.status</span></div>
-      <pre id="term"></pre>
-    </div>
-  </section>
 
-  <!-- METRICS -->
-  <section class="container" id="impact">
-    <div class="metrics">
-      <div class="metric"><b data-count="300" data-suffix="+">0</b><span>microservices served by one messaging platform</span></div>
-      <div class="metric"><b data-count="2" data-suffix="M+">0</b><span>events processed per day</span></div>
-      <div class="metric"><b data-count="10" data-suffix="K">0</b><span>requests/sec at peak throughput</span></div>
-      <div class="metric"><b data-count="40" data-suffix="%">0</b><span>API latency reduction via caching &amp; query tuning</span></div>
-    </div>
-  </section>
+    <aside class="spec" aria-label="Recruiter snapshot">
+      <div class="spec-head"><span>Recruiter snapshot</span><span class="mono">2026</span></div>
+      <dl>
+        <div><dt>Role</dt><dd>Senior Full-Stack Engineer</dd></div>
+        <div><dt>Now</dt><dd>SS&amp;C Intralinks <span class="muted">· since Jul 2022</span></dd></div>
+        <div><dt>Strengths</dt><dd>Distributed systems · React / TypeScript · AWS · Applied AI</dd></div>
+        <div><dt>Languages</dt><dd>Java · Node.js · TypeScript · Python</dd></div>
+        <div><dt>Experience</dt><dd>8+ years, enterprise scale</dd></div>
+        <div><dt>Education</dt><dd>M.S. Computer Science, UT Dallas</dd></div>
+        <div><dt>Location</dt><dd>Dallas–Fort Worth, TX</dd></div>
+      </dl>
+    </aside>
+  </div>
 
-  <!-- ABOUT -->
-  <section class="container two-col" id="about">
-    <div>
-      <h2><span class="num">01</span> About</h2>
+  <div class="container">
+    <div class="metrics" id="impact">
+      <div class="metric"><b data-count="300" data-suffix="+">300+</b><span>microservices on one messaging platform</span></div>
+      <div class="metric"><b data-count="2" data-suffix="M+">2M+</b><span>events processed per day</span></div>
+      <div class="metric"><b data-count="10" data-suffix="K">10K</b><span>requests/sec at peak throughput</span></div>
+      <div class="metric"><b data-count="40" data-suffix="%">40%</b><span>API latency cut via caching &amp; query tuning</span></div>
     </div>
-    <div class="prose">
-      <p>I’m a full-stack engineer who started on the front end and grew into the backend. I care about the things that make software trustworthy and pleasant to use: fast, accessible interfaces, backward-compatible migrations, sane retry and dead-letter handling, dashboards that tell the truth at 3 a.m.</p>
-      <p>At SS&amp;C Intralinks I architected and own a multi-region, event-driven messaging platform that carries mission-critical enterprise workflows for 300+ microservices. Before that I built React-based enterprise web apps and reusable UI components alongside serverless Node.js services on AWS at Idexcel (Verizon and Dish Network platforms), and started my career at TCS building React front ends and optimizing enterprise APIs.</p>
-      <p>Lately I’ve been pairing that production mindset with LLMs — building multi-agent research pipelines and a digital twin of my own profile.</p>
-      <p class="muted">Originally from Andhra Pradesh, India · in Dallas since 2018 · M.S. from UT Dallas · South Indian food, road trips and movies.</p>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- EXPERIENCE -->
-  <section class="container" id="experience">
-    <h2><span class="num">02</span> Experience</h2>
-    <ol class="timeline">
-      <li class="reveal">
-        <div class="when">Jul 2022 — Present</div>
-        <div class="what">
-          <h3>Senior Software Engineer <span>· SS&amp;C Intralinks</span></h3>
-          <ul>
-            <li>Architected and own a <b>multi-region event-driven messaging platform</b> supporting 300+ microservices and mission-critical enterprise workflows.</li>
-            <li>Operate highly available services at <b>2M+ events/day</b> with <b>10K RPS</b> peak throughput.</li>
-            <li>Led <b>zero-downtime schema migrations</b> with full backward compatibility across 300+ services.</li>
-            <li>Redesigned retry and dead-letter handling and added monitoring/alerting, significantly reducing production incidents.</li>
-          </ul>
-          <div class="tags"><i>RabbitMQ</i><i>Java</i><i>Node.js</i><i>AWS</i><i>Kubernetes</i><i>Prometheus</i><i>Grafana</i></div>
+<!-- ============ EXPERIENCE ============ -->
+<section class="container block" id="experience">
+  <header class="sec-head"><p class="kicker">01 — Experience</p><h2>Eight years, front end to platform.</h2></header>
+  <ol class="jobs">
+    <li class="job reveal">
+      <div class="job-meta"><b>SS&amp;C Intralinks</b><span>Senior Software Engineer</span><span class="mono">Jul 2022 – Present</span></div>
+      <div class="job-body">
+        <ul>
+          <li>Architected and own a <b>multi-region, event-driven messaging platform</b> serving 300+ microservices and mission-critical enterprise workflows.</li>
+          <li>Run highly available services at <b>2M+ events/day</b> with <b>10K RPS</b> peak throughput.</li>
+          <li>Led <b>zero-downtime schema migrations</b> across 300+ services with full backward compatibility.</li>
+          <li>Redesigned retry and dead-letter handling and tightened monitoring/alerting, significantly reducing production incidents.</li>
+        </ul>
+        <div class="chips"><i>RabbitMQ</i><i>Java</i><i>Node.js</i><i>AWS</i><i>Kubernetes</i><i>Prometheus</i><i>Grafana</i></div>
+      </div>
+    </li>
+    <li class="job reveal">
+      <div class="job-meta"><b>Idexcel</b><span>Software Engineer</span><span class="mono">Sep 2020 – Jul 2022</span><span class="muted sm">Client platforms: Verizon, Dish Network</span></div>
+      <div class="job-body">
+        <ul>
+          <li>Built <b>React enterprise web apps</b> and backend REST APIs for high-traffic monitoring platforms, with reusable UI components in JavaScript, TypeScript, HTML and CSS.</li>
+          <li>Built and ran <b>serverless AWS backends</b> — Lambda, API Gateway, Step Functions, S3, SQS — with CloudWatch logging and monitoring.</li>
+          <li>Worked across frontend, backend, QA and product teams; raised quality with automated testing and CI/CD.</li>
+        </ul>
+        <div class="chips"><i>React</i><i>TypeScript</i><i>Node.js</i><i>Lambda</i><i>API Gateway</i><i>Step Functions</i><i>S3</i><i>SQS</i><i>CloudWatch</i></div>
+      </div>
+    </li>
+    <li class="job reveal">
+      <div class="job-meta"><b>Axxess</b><span>Engineering Intern</span><span class="mono">Jan – Mar 2020</span></div>
+      <div class="job-body"><p class="muted">Engineering internship in Dallas, TX during my M.S. at UT Dallas.</p></div>
+    </li>
+    <li class="job reveal">
+      <div class="job-meta"><b>Tata Consultancy Services</b><span>Software Engineer</span><span class="mono">Sep 2016 – Jul 2018</span></div>
+      <div class="job-body">
+        <ul>
+          <li>Built <b>responsive React enterprise web applications</b> in JavaScript, integrating REST APIs for customer-facing features.</li>
+          <li>Cut API response latency by <b>40%</b> through backend optimization, efficient query design and caching.</li>
+        </ul>
+        <div class="chips"><i>React</i><i>JavaScript</i><i>REST</i></div>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ CASE STUDY + LAB ============ -->
+<section class="block alt" id="case">
+  <div class="container">
+    <header class="sec-head"><p class="kicker">02 — Case study</p><h2>A messaging platform 300 services depend on.</h2>
+      <p class="sub">At SS&amp;C Intralinks I architected and own the multi-region event backbone behind 300+ microservices. Three problems define the work:</p></header>
+    <div class="trio">
+      <article class="reveal"><span class="mono tag">01 · Change</span><h3>Evolve contracts without downtime</h3><p>Led zero-downtime schema migrations across 300+ services, keeping every change backward compatible so producers and consumers never had to deploy in lockstep.</p></article>
+      <article class="reveal"><span class="mono tag">02 · Failure</span><h3>Make failure boring</h3><p>Redesigned retry strategies and dead-letter handling so transient faults heal themselves and poison messages are isolated, inspectable and replayable.</p></article>
+      <article class="reveal"><span class="mono tag">03 · Visibility</span><h3>See problems before users do</h3><p>Built monitoring and alerting with Prometheus and Grafana around lag, retries and dead letters, which significantly reduced production incidents.</p></article>
+    </div>
+
+    <div class="lab reveal" id="lab" aria-labelledby="lab-title">
+      <div class="lab-head">
+        <div>
+          <p class="kicker">Live demo</p>
+          <h3 id="lab-title">Event Flow Lab</h3>
+          <p class="sub">A simplified, in-browser model of these ideas. Break things and watch the platform respond.</p>
         </div>
-      </li>
-      <li class="reveal">
-        <div class="when">Jul 2022 — Apr 2025</div>
-        <div class="what">
-          <h3>Software Engineer <span>· SS&amp;C Intralinks</span></h3>
-          <p class="muted">Earlier role at the same company, before promotion to Senior.</p>
+        <div class="health" id="health" role="status"><span class="hdot"></span><span id="health-text">Healthy</span></div>
+      </div>
+
+      <div class="lab-stage"><canvas id="labcanvas" aria-hidden="true"></canvas></div>
+
+      <div class="lab-stats" aria-hidden="true">
+        <div><b id="s-tps">0</b><span>events/sec processed</span></div>
+        <div><b id="s-q">0</b><span>queue depth</span></div>
+        <div><b id="s-r">0</b><span>in retry</span></div>
+        <div><b id="s-d">0</b><span>dead-lettered</span></div>
+        <div><b id="s-ok">100%</b><span>delivered</span></div>
+      </div>
+
+      <div class="lab-controls">
+        <label class="ctl"><span>Traffic <output id="rate-out">12</output>/s</span><input type="range" id="rate" min="1" max="60" value="12"></label>
+        <label class="tog"><input type="checkbox" id="fail"><span class="sw"></span><span>Inject downstream failures</span></label>
+        <label class="tog"><input type="checkbox" id="breaking"><span class="sw"></span><span>Ship a <em>breaking</em> schema change</span></label>
+        <div class="ctl-btns">
+          <button class="btn sm" id="burst" type="button">Burst ×150</button>
+          <button class="btn sm" id="replay" type="button">Replay dead letters</button>
+          <button class="btn sm ghost" id="reset" type="button">Reset</button>
+          <button class="btn sm" id="pause" type="button" aria-pressed="false">Pause</button>
         </div>
-      </li>
-      <li class="reveal">
-        <div class="when">Sep 2020 — Jul 2022</div>
-        <div class="what">
-          <h3>Software Engineer <span>· Idexcel · Dallas, TX</span></h3>
-          <p class="muted">Client platforms: Verizon, Dish Network</p>
-          <ul>
-            <li>Developed <b>React-based enterprise web applications</b> and backend REST APIs for high-traffic monitoring platforms, delivering scalable customer-facing features.</li>
-            <li>Built <b>reusable UI components</b> in JavaScript, TypeScript, HTML and CSS, improving usability and maintainability.</li>
-            <li>Built and ran <b>serverless AWS backends</b> (Lambda, API Gateway, Step Functions, S3, SQS) for client platforms including Dish Network, with <b>CloudWatch</b> logging and monitoring.</li>
-            <li>Worked across frontend, backend, QA and product teams to integrate REST APIs and improve application performance and user experience.</li>
-            <li>Raised quality through automated testing, CI/CD pipelines and production monitoring.</li>
-          </ul>
-          <div class="tags"><i>React</i><i>TypeScript</i><i>HTML/CSS</i><i>Node.js</i><i>AWS</i><i>Lambda</i><i>API Gateway</i><i>Step Functions</i><i>S3</i><i>SQS</i><i>CloudWatch</i><i>CI/CD</i></div>
-        </div>
-      </li>
-      <li class="reveal">
-        <div class="when">Jan — Mar 2020</div>
-        <div class="what"><h3>Engineering Intern <span>· Axxess · Dallas, TX</span></h3></div>
-      </li>
-      <li class="reveal">
-        <div class="when">Sep 2016 — Jul 2018</div>
-        <div class="what">
-          <h3>Software Engineer <span>· Tata Consultancy Services · Mumbai</span></h3>
-          <ul>
-            <li>Built <b>responsive React enterprise web applications</b> in JavaScript and integrated REST APIs to deliver customer-facing features.</li>
-            <li>Cut API response latency by <b>40%</b> through backend optimization, efficient query design and caching.</li>
-            <li>Improved API scalability and distributed-system performance by modernizing enterprise backend services.</li>
-          </ul>
-          <div class="tags"><i>React</i><i>JavaScript</i><i>REST</i></div>
-        </div>
-      </li>
-    </ol>
-  </section>
-
-  <!-- ARCHITECTURE -->
-  <section class="container" id="architecture">
-    <h2><span class="num">03</span> What I design</h2>
-    <p class="section-sub">A simplified view of the kind of event-driven platform I architect and operate — built for isolation, replay and graceful failure.</p>
-    <div class="diagram reveal">
-      <svg viewBox="0 0 960 360" role="img" aria-label="Event-driven architecture: producers publish to a broker; consumers read from queues with retry and dead-letter queues; observability spans everything">
-        <defs>
-          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker>
-          <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--warn)"/></marker>
-        </defs>
-        <g class="node"><rect x="20" y="40" width="170" height="64" rx="12"/><text x="105" y="68">Producer services</text><text x="105" y="88" class="sm">REST / SDK</text></g>
-        <g class="node"><rect x="20" y="140" width="170" height="64" rx="12"/><text x="105" y="168">Producer services</text><text x="105" y="188" class="sm">Lambda / ECS</text></g>
-        <g class="node"><rect x="20" y="240" width="170" height="64" rx="12"/><text x="105" y="268">Schema registry</text><text x="105" y="288" class="sm">versioned contracts</text></g>
-
-        <g class="node hot"><rect x="300" y="70" width="190" height="170" rx="16"/><text x="395" y="115">Multi-region</text><text x="395" y="140">message broker</text><text x="395" y="175" class="sm">RabbitMQ · HA queues</text><text x="395" y="195" class="sm">2M+ events/day</text><text x="395" y="215" class="sm">10K RPS peak</text></g>
-
-        <g class="node"><rect x="600" y="40" width="170" height="64" rx="12"/><text x="685" y="68">Consumer group</text><text x="685" y="88" class="sm">idempotent handlers</text></g>
-        <g class="node"><rect x="600" y="140" width="170" height="64" rx="12"/><text x="685" y="168">Retry queues</text><text x="685" y="188" class="sm">backoff + jitter</text></g>
-        <g class="node warn"><rect x="600" y="240" width="170" height="64" rx="12"/><text x="685" y="268">Dead-letter queue</text><text x="685" y="288" class="sm">alert · inspect · replay</text></g>
-
-        <g class="node"><rect x="840" y="90" width="100" height="130" rx="12"/><text x="890" y="150">300+</text><text x="890" y="172" class="sm">microservices</text></g>
-
-        <path class="flow" d="M190 72 H300" marker-end="url(#ar)"/>
-        <path class="flow" d="M190 172 H300" marker-end="url(#ar)"/>
-        <path class="flow dashed" d="M105 240 V215 H245 V155 H300" marker-end="url(#ar)"/>
-        <path class="flow" d="M490 100 H545 V72 H600" marker-end="url(#ar)"/>
-        <path class="flow" d="M490 172 H600" marker-end="url(#ar)"/>
-        <path class="flow warnp" d="M685 204 V240" marker-end="url(#ar2)"/>
-        <path class="flow" d="M770 72 H805 V130 H840" marker-end="url(#ar)"/>
-        <path class="flow warnp dashed" d="M600 160 H560 V120" marker-end="url(#ar2)"/>
-
-        <g class="obs"><rect x="20" y="326" width="920" height="26" rx="13"/><text x="480" y="344">Observability — Prometheus metrics · Grafana dashboards · alerting on lag, retries and DLQ depth</text></g>
-      </svg>
+      </div>
+      <p class="lab-note" id="lab-note">Steady state: producers publish, consumers acknowledge, nothing is lost.</p>
+      <p class="sr-only" id="lab-live" aria-live="polite"></p>
     </div>
-    <ul class="pills reveal">
-      <li>Zero-downtime schema evolution</li><li>At-least-once delivery + idempotency</li><li>Retry with backoff &amp; dead-lettering</li><li>Multi-region high availability</li><li>SLO-driven alerting</li>
-    </ul>
-  </section>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section class="container" id="projects">
-    <h2><span class="num">04</span> Selected projects</h2>
-    <p class="section-sub">Side projects where I explore agentic AI and automation — the same engineering habits, applied to new problems.</p>
+<!-- ============ STACK ============ -->
+<section class="container block" id="stack">
+  <header class="sec-head"><p class="kicker">03 — Full-stack, literally</p><h2>Every layer, with proof of where I used it.</h2></header>
+  <div class="layers">
+    <div class="layer reveal"><div class="l-name"><span class="mono">L7</span>Interface</div><div class="chips"><i>React</i><i>TypeScript</i><i>JavaScript</i><i>HTML5</i><i>CSS3</i><i>React Router</i></div><div class="l-proof">TCS · Idexcel</div></div>
+    <div class="layer reveal"><div class="l-name"><span class="mono">L6</span>APIs &amp; services</div><div class="chips"><i>Node.js</i><i>Java</i><i>Python</i><i>REST</i><i>Express</i><i>Microservices</i></div><div class="l-proof">Idexcel · Intralinks</div></div>
+    <div class="layer reveal"><div class="l-name"><span class="mono">L5</span>Messaging</div><div class="chips"><i>RabbitMQ</i><i>SQS</i><i>Event-driven design</i><i>Retry / DLQ</i></div><div class="l-proof">Intralinks · Idexcel</div></div>
+    <div class="layer reveal"><div class="l-name"><span class="mono">L4</span>Cloud</div><div class="chips"><i>Lambda</i><i>API Gateway</i><i>Step Functions</i><i>S3</i><i>ECS / EC2</i><i>CloudFormation</i><i>Docker</i><i>Kubernetes</i></div><div class="l-proof">Idexcel · Intralinks</div></div>
+    <div class="layer reveal"><div class="l-name"><span class="mono">L3</span>Data</div><div class="chips"><i>PostgreSQL</i><i>MySQL</i><i>DynamoDB</i><i>MongoDB</i></div><div class="l-proof">Across roles</div></div>
+    <div class="layer reveal"><div class="l-name"><span class="mono">L2</span>Observability</div><div class="chips"><i>Prometheus</i><i>Grafana</i><i>CloudWatch</i><i>Alerting</i><i>CI/CD</i></div><div class="l-proof">Intralinks · Idexcel</div></div>
+    <div class="layer reveal"><div class="l-name"><span class="mono">L1</span>Applied AI</div><div class="chips"><i>OpenAI API</i><i>LLM integration</i><i>Agentic workflows</i><i>Tool calling</i></div><div class="l-proof">Personal projects</div></div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="block alt" id="projects">
+  <div class="container">
+    <header class="sec-head"><p class="kicker">04 — Projects</p><h2>Things I build when nobody’s asking.</h2></header>
     <div class="cards">
       <article class="card reveal">
-        <div class="card-top"><span class="badge">Agentic AI</span><a href="https://github.com/CHAITANYAMALINENI/deep-research-ai" target="_blank" rel="noopener" aria-label="deep-research-ai on GitHub">↗</a></div>
+        <div class="card-top"><span class="mono tag">Agentic AI</span><a class="arrow" href="https://github.com/CHAITANYAMALINENI/deep-research-ai" target="_blank" rel="noopener" aria-label="Deep Research AI on GitHub">↗</a></div>
         <h3>Deep Research AI</h3>
-        <p>A multi-agent pipeline that takes a question, plans a set of web searches, runs them, writes a long-form report and emails it to you. Specialized agents (planner, search, writer, email) are orchestrated by a research manager and served through a Gradio UI.</p>
-        <div class="tags"><i>Python</i><i>Multi-agent</i><i>LLM</i><i>Gradio</i></div>
-        <a class="link" href="https://github.com/CHAITANYAMALINENI/deep-research-ai" target="_blank" rel="noopener">View source →</a>
+        <p>Ask a question; a team of agents plans the searches, runs them, writes a long-form report and emails it to you. A research manager orchestrates specialist agents behind a Gradio UI.</p>
+        <ol class="flow"><li>Plan</li><li>Search</li><li>Write</li><li>Email</li></ol>
+        <div class="chips"><i>Python</i><i>Multi-agent</i><i>LLM</i><i>Gradio</i></div>
+        <a class="more" href="https://github.com/CHAITANYAMALINENI/deep-research-ai" target="_blank" rel="noopener">View source →</a>
       </article>
-
       <article class="card reveal">
-        <div class="card-top"><span class="badge">LLM · Chat</span><a href="https://github.com/CHAITANYAMALINENI/my-digital-twin-ai" target="_blank" rel="noopener" aria-label="my-digital-twin-ai on GitHub">↗</a></div>
+        <div class="card-top"><span class="mono tag">LLM · Chat</span><a class="arrow" href="https://github.com/CHAITANYAMALINENI/my-digital-twin-ai" target="_blank" rel="noopener" aria-label="Digital Twin on GitHub">↗</a></div>
         <h3>Digital Twin</h3>
-        <p>A conversational AI grounded in my LinkedIn profile and personal summary so visitors can ask it about my background. Context-building, tool calls and a custom-styled Gradio interface.</p>
-        <div class="tags"><i>Python</i><i>LLM tools</i><i>RAG-style context</i><i>Gradio</i></div>
-        <a class="link" href="https://github.com/CHAITANYAMALINENI/my-digital-twin-ai" target="_blank" rel="noopener">View source →</a>
+        <p>A conversational AI grounded in my LinkedIn profile and personal summary, so people can ask it about my background. Context building, tool calls and a custom Gradio interface.</p>
+        <ol class="flow"><li>Profile</li><li>Context</li><li>LLM + tools</li><li>Chat</li></ol>
+        <div class="chips"><i>Python</i><i>LLM tools</i><i>Gradio</i></div>
+        <a class="more" href="https://github.com/CHAITANYAMALINENI/my-digital-twin-ai" target="_blank" rel="noopener">View source →</a>
       </article>
-
-
-
-      <article class="card reveal wide">
-        <div class="card-top"><span class="badge">Full-stack</span><a href="https://github.com/CHAITANYAMALINENI/vehicle-registration-backend" target="_blank" rel="noopener" aria-label="vehicle-registration-backend on GitHub">↗</a></div>
+      <article class="card wide reveal">
+        <div class="card-top"><span class="mono tag">Full-stack</span><a class="arrow" href="https://github.com/CHAITANYAMALINENI/vehicle-registration-backend" target="_blank" rel="noopener" aria-label="Vehicle Registration on GitHub">↗</a></div>
         <h3>Vehicle Registration System</h3>
-        <p>An end-to-end app for registering and booking cars and bikes: a React client (login, vehicle browsing, registration, booking and payment flows with client-side routing) backed by an Express REST API with a MySQL data layer for users, vehicles and sub-types.</p>
-        <div class="tags"><i>React 18</i><i>React Router</i><i>Bootstrap</i><i>Node.js</i><i>Express</i><i>MySQL</i></div>
-        <a class="link" href="https://github.com/CHAITANYAMALINENI/vehicle-registration-backend" target="_blank" rel="noopener">View source →</a>
+        <p>An end-to-end app for registering and booking cars and bikes: a React client with login, vehicle browsing, registration, booking and payment flows, backed by an Express REST API and a MySQL data layer for users, vehicles and sub-types.</p>
+        <ol class="flow"><li>React 18 + Router</li><li>Express REST API</li><li>MySQL</li></ol>
+        <div class="chips"><i>React</i><i>Bootstrap</i><i>Node.js</i><i>Express</i><i>MySQL</i></div>
+        <a class="more" href="https://github.com/CHAITANYAMALINENI/vehicle-registration-backend" target="_blank" rel="noopener">View source →</a>
       </article>
     </div>
-    <div id="gh-live" class="gh-live reveal" hidden></div>
-  </section>
+    <div id="gh-live" class="gh-live" hidden></div>
+  </div>
+</section>
 
-  <!-- SKILLS -->
-  <section class="container" id="skills">
-    <h2><span class="num">05</span> Toolbox</h2>
-    <div class="skills">
-      <div class="skill reveal"><h4>Languages</h4><div class="tags"><i>Java</i><i>Node.js</i><i>TypeScript</i><i>Python</i><i>JavaScript</i></div></div>
-      <div class="skill reveal"><h4>Frontend</h4><div class="tags"><i>React</i><i>TypeScript</i><i>JavaScript</i><i>HTML5</i><i>CSS3</i><i>React Router</i><i>Bootstrap</i><i>Reusable components</i></div></div>
-      <div class="skill reveal"><h4>Cloud &amp; Infra</h4><div class="tags"><i>AWS Lambda</i><i>ECS / EC2</i><i>API Gateway</i><i>Step Functions</i><i>S3</i><i>SQS</i><i>CloudWatch</i><i>CloudFormation</i><i>Serverless</i><i>Docker</i><i>Kubernetes</i></div></div>
-      <div class="skill reveal"><h4>Messaging &amp; APIs</h4><div class="tags"><i>RabbitMQ</i><i>Event-driven design</i><i>REST APIs</i><i>Microservices</i></div></div>
-      <div class="skill reveal"><h4>Data</h4><div class="tags"><i>PostgreSQL</i><i>MySQL</i><i>DynamoDB</i><i>MongoDB</i></div></div>
-      <div class="skill reveal"><h4>Observability</h4><div class="tags"><i>Prometheus</i><i>Grafana</i><i>Alerting</i><i>Incident response</i></div></div>
-      <div class="skill reveal"><h4>AI</h4><div class="tags"><i>OpenAI API</i><i>LLM integration</i><i>Agentic workflows</i><i>Tool calling</i></div></div>
+<!-- ============ ABOUT / EDU ============ -->
+<section class="container block" id="about">
+  <div class="about-grid">
+    <div>
+      <header class="sec-head"><p class="kicker">05 — About</p><h2>Started on the front end. Grew into the platform.</h2></header>
+      <div class="prose">
+        <p>I care about what makes software trustworthy <em>and</em> pleasant to use: fast, accessible interfaces; backward-compatible migrations; sane retry and dead-letter handling; dashboards that tell the truth at 3 a.m.</p>
+        <p>I began at TCS building React applications, then built React apps and serverless AWS services at Idexcel for Verizon and Dish Network platforms. At SS&amp;C Intralinks I moved deep into distributed systems, and lately I pair that production mindset with LLMs.</p>
+        <p class="muted">Originally from Andhra Pradesh, India · in Dallas since 2018 · South Indian food, road trips and movies.</p>
+      </div>
     </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="container two-col" id="education">
-    <div><h2><span class="num">06</span> Education</h2></div>
     <div class="edu">
-      <div class="reveal"><h3>The University of Texas at Dallas</h3><p>Master of Science, Computer Science · 2018 – 2020</p></div>
-      <div class="reveal"><h3>VR Siddhartha Engineering College</h3><p>Bachelor of Technology, Computer Science · 2012 – 2016</p></div>
-      <div class="reveal"><h3>Certifications</h3><p class="muted">Express Essential Training · Flask Essential Training · Agile Development Practices · Learning webpack 4</p></div>
+      <h3 class="kicker">Education</h3>
+      <div><b>The University of Texas at Dallas</b><span>M.S., Computer Science · 2018 – 2020</span></div>
+      <div><b>VR Siddhartha Engineering College</b><span>B.Tech, Computer Science · 2012 – 2016</span></div>
+      <h3 class="kicker" style="margin-top:28px">Certifications</h3>
+      <div><span>Express Essential Training · Flask Essential Training · Agile Development Practices · Learning webpack 4</span></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section class="container contact" id="contact">
+<!-- ============ CONTACT ============ -->
+<section class="container" id="contact">
+  <div class="contact">
+    <p class="kicker">06 — Contact</p>
     <h2>Let’s build something reliable.</h2>
-    <p class="lead">I’m looking for a full-time Software Engineer role where full-stack craft, distributed systems and applied AI meet. The best way to reach me is email or LinkedIn.</p>
-    <div class="hero-actions center">
+    <p class="lead">I’m looking for a full-time Software Engineer role where full-stack craft, distributed systems and applied AI meet. Email is fastest.</p>
+    <div class="cta center">
       <a class="btn primary" href="mailto:chaitanyamalineni4880@gmail.com">chaitanyamalineni4880@gmail.com</a>
-      <a class="btn" href="https://www.linkedin.com/in/chaitanya-malineni" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn" href="https://github.com/CHAITANYAMALINENI" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="resume.pdf" download>Download résumé</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/chaitanya-malineni" target="_blank" rel="noopener">LinkedIn&nbsp;↗</a>
+      <a class="btn ghost" href="https://github.com/CHAITANYAMALINENI" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
     </div>
-  </section>
+  </div>
+</section>
 </main>
 
 <footer class="container foot">
-  <span>© <span id="yr"></span> Chaitanya Malineni</span>
-  <span class="muted">Handcrafted with HTML, CSS &amp; a little JavaScript.</span>
+  <span>© <span id="yr">2026</span> Chaitanya Malineni</span>
+  <span class="muted">Hand-built with HTML, CSS and vanilla JavaScript — no frameworks, no build step.</span>
 </footer>
 
 <script src="script.js"></script>
