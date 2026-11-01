@@ -35,17 +35,10 @@
     });
   }, { rootMargin: '-40% 0px -55% 0px' });
   links.forEach(a => { const t = $(a.getAttribute('href')); if (t) spy.observe(t); });
+  /* layout settles after fonts load; re-aim direct #hash visits */
+  addEventListener('load', () => { if (location.hash && $(location.hash)) setTimeout(() => $(location.hash).scrollIntoView(), 150); });
 
   $('#yr').textContent = new Date().getFullYear();
-
-  /* ---------- copy email ---------- */
-  const copyBtn = $('#copy-email'), copyLabel = $('#copy-label');
-  copyBtn.addEventListener('click', async () => {
-    const email = copyBtn.dataset.email;
-    try { await navigator.clipboard.writeText(email); copyLabel.textContent = 'Copied ✓'; }
-    catch { location.href = 'mailto:' + email; return; }
-    setTimeout(() => (copyLabel.textContent = 'Copy email'), 1800);
-  });
 
   /* ---------- reveal on scroll ---------- */
   const io = new IntersectionObserver((entries) => {
@@ -272,7 +265,7 @@
         rr(x, y, 11, 11, 3); ctx.fillStyle = i < shown ? (lagging ? C.warn : C.accent) : C.alt; ctx.fill();
       }
       text(qn > 50 ? `+${qn - 50} more queued` : `queue depth ${qn}`, bx, G.broker.y + G.broker.h - 26, { s: 11, c: lagging ? C.warn : C.muted, f: mono });
-      text(`lag ${(qn / 20).toFixed(1)}s`, bx, G.broker.y + G.broker.h - 10, { s: 10, c: C.muted, f: mono });
+      text(`est. lag ${(qn / 20).toFixed(1)}s`, bx, G.broker.y + G.broker.h - 10, { s: 10, c: C.muted, f: mono });
 
       /* retry */
       const rn = S.retry.length;
@@ -327,7 +320,7 @@
       if (dn) {
         state = 'bad'; txt = `ALERT · ${dn} dead-lettered`;
         note = el.breaking.checked
-          ? 'Breaking change: consumers can’t read v2 events. They retry with backoff, then land in the dead-letter queue and alert. Turn the toggle off (compatible schema) and replay — nothing is lost.'
+          ? 'Breaking change: consumers can’t read v2 events. After retries they land in the dead-letter queue and an alert fires. Revert the change (toggle off) or ship a compatible consumer, then replay — nothing is lost.'
           : 'Failed messages are isolated in the dead-letter queue and an alert fires. Fix the cause, then replay them — no data lost, no blocked queue.';
       } else if (rn || el.fail.checked) {
         state = 'warn'; txt = 'Degraded · retrying';
@@ -345,15 +338,18 @@
     }
 
     /* ---------- loop ---------- */
+    let raf = 0;
     function frame(t) {
-      requestAnimationFrame(frame);
-      if (!visible) { last = t; return; }
+      if (!visible) { raf = 0; last = t; return; }
+      raf = requestAnimationFrame(frame);
       const dt = Math.min(60, t - last || 16); last = t;
       if (running) step(dt);
       draw(); ui();
     }
-    requestAnimationFrame(frame);
-    new IntersectionObserver(es => { visible = es[0].isIntersecting; if (visible) resize(); }, { threshold: 0.05 }).observe(cv);
+    new IntersectionObserver(es => {
+      visible = es[0].isIntersecting;
+      if (visible) { resize(); last = performance.now(); if (!raf) raf = requestAnimationFrame(frame); }
+    }, { threshold: 0.05 }).observe(cv);
 
     /* ---------- controls ---------- */
     el.rate.addEventListener('input', () => (el.rateOut.textContent = el.rate.value));
