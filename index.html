@@ -216,12 +216,12 @@
         <a class="more" href="https://github.com/CHAITANYAMALINENI/deep-research-ai" target="_blank" rel="noopener">View source →</a>
       </article>
       <article class="card reveal">
-        <div class="card-top"><span class="mono tag">LLM · Chat</span><a class="arrow" href="https://github.com/CHAITANYAMALINENI/my-digital-twin-ai" target="_blank" rel="noopener" aria-label="Digital Twin on GitHub">↗</a></div>
+        <div class="card-top"><span class="mono tag">LLM · Chat · Live</span><a class="arrow" href="https://github.com/CHAITANYAMALINENI/my-digital-twin-ai" target="_blank" rel="noopener" aria-label="Digital Twin on GitHub">↗</a></div>
         <h3>Digital Twin</h3>
         <p>A conversational AI grounded in my LinkedIn profile and personal summary, so people can ask it about my background. Context building, tool calls and a custom Gradio interface.</p>
         <ol class="flow"><li>Profile</li><li>Context</li><li>LLM + tools</li><li>Chat</li></ol>
         <div class="chips"><i>Python</i><i>LLM tools</i><i>Gradio</i></div>
-        <a class="more" href="https://github.com/CHAITANYAMALINENI/my-digital-twin-ai" target="_blank" rel="noopener">View source →</a>
+        <div class="more-row"><a class="more" href="https://twin-08bn.onrender.com/" target="_blank" rel="noopener">Try it live →</a><a class="more alt-link" href="https://github.com/CHAITANYAMALINENI/my-digital-twin-ai" target="_blank" rel="noopener">View source</a></div>
       </article>
       <article class="card wide reveal">
         <div class="card-top"><span class="mono tag">Full-stack</span><a class="arrow" href="https://github.com/CHAITANYAMALINENI/vehicle-registration-backend" target="_blank" rel="noopener" aria-label="Vehicle Registration on GitHub">↗</a></div>
@@ -231,6 +231,18 @@
         <div class="chips"><i>React</i><i>Bootstrap</i><i>Node.js</i><i>Express</i><i>MySQL</i></div>
         <a class="more" href="https://github.com/CHAITANYAMALINENI/vehicle-registration-backend" target="_blank" rel="noopener">View source →</a>
       </article>
+    </div>
+    <div class="twin reveal" id="twin">
+      <div class="twin-copy">
+        <p class="kicker">Live · talk to it</p>
+        <h3>Ask my AI twin</h3>
+        <p>Curious about my background, projects or what I’m looking for? Chat with a digital twin grounded in my LinkedIn profile. It runs live on a small server, so the first load can take ~30 seconds to wake up.</p>
+        <div class="cta">
+          <button class="btn primary" id="twin-load" type="button">Start chatting</button>
+          <a class="btn ghost" href="https://twin-08bn.onrender.com/" target="_blank" rel="noopener">Open in new tab ↗</a>
+        </div>
+      </div>
+      <div class="twin-frame" id="twin-frame" aria-live="polite"><p class="muted sm">The chat loads only when you click, to keep the page fast.</p></div>
     </div>
     <div id="gh-live" class="gh-live" hidden></div>
   </div>

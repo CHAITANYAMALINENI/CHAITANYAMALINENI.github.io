@@ -72,6 +72,16 @@
     $$('[data-count]').forEach(el => cio.observe(el));
   }
 
+  /* ---------- digital twin: load the embed only on demand ---------- */
+  const twinBtn = $('#twin-load');
+  if (twinBtn) twinBtn.addEventListener('click', () => {
+    const frame = $('#twin-frame');
+    frame.classList.add('live');
+    frame.innerHTML = '<iframe src="https://twin-08bn.onrender.com/" title="Chat with Chaitanya\'s AI digital twin" loading="lazy" allow="clipboard-write"></iframe>';
+    twinBtn.disabled = true; twinBtn.textContent = 'Chat loading…';
+    $('#twin-frame iframe').addEventListener('load', () => { twinBtn.textContent = 'Chat is live →'; });
+  });
+
   /* ---------- live GitHub stats (hidden if unavailable) ---------- */
   (async () => {
     const box = $('#gh-live');
